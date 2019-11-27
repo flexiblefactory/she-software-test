@@ -12,7 +12,7 @@ const corsFetch = (path, method, config) => {
     credentials: 'include',
     cache: 'no-cache',
     headers: { 'Content-Type': 'application/json' },
-    ...configß
+    ...config
   });
 }
 
