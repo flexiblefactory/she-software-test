@@ -17,7 +17,7 @@ export default observer(({ appState }) => {
   const { cats } = appState;
 
   return (
-    <Grid item>
+    <Grid className={classes.flexGrow} item>
       <Paper className={classes.paper}>
         <ModalForm
           save={appState.saveNewCategory}

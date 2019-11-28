@@ -17,7 +17,7 @@ const CategoryDetail = observer(({ appState }) => {
     <React.Fragment>
       {
         appState.selectedCategory &&
-        <Grid item>
+        <Grid className={classes.flexGrow} item>
           <Paper className={[classes.paper, classes.category].join(' ')}>
             {appState.cats.all.length ?
               <ModalForm
@@ -51,7 +51,7 @@ const CategoryDetail = observer(({ appState }) => {
                   cats={cats}
                   key={`item${item.id}`}
                   appState={appState}
-                  >
+                >
                 </Incident>
               ))
             }

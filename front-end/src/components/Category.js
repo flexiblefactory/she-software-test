@@ -3,7 +3,7 @@ import { observer } from "mobx-react"
 import { makeStyles } from '@material-ui/core/styles';
 import TreeItem from '@material-ui/lab/TreeItem';
 
-const useStyles = makeStyles({ category: { color: 'hotpink', width: 400 }});
+const useStyles = makeStyles({ category: { color: 'hotpink' }});
   
 const Cat = ({ cat, cats, onSelect }) => {
 
